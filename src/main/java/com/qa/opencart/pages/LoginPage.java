@@ -9,8 +9,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-@Epic("Epic 100:OpenCart application, Design The Login Page..")
-@Story("User Stroy 101:Implement the Login page features")
+
 public class LoginPage {
 
 	private WebDriver driver;

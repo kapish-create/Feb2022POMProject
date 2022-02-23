@@ -15,8 +15,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-@Epic("Epic 200: Design Account page features with all the details")
-@Story("User Stroy 201: Design the account page and its features")
+
 public class AccountPage {
 
 	private WebDriver driver;

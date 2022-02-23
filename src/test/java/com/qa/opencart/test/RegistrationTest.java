@@ -22,7 +22,8 @@ public class RegistrationTest extends BaseTest {
 		Object data[][] = ExcelUtils.getTestData(Constants.REGISTER_SHEET_NAME);
 		return data;
 	}
-
+	
+    
 	@Test(dataProvider = "getRegisterData")
 	public void registrationTest(String firstName, String lastName, String email, String telephone, String password,
 			String subscribe) {
