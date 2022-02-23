@@ -9,7 +9,6 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
-
 public class LoginPage {
 
 	private WebDriver driver;
@@ -50,6 +49,7 @@ public class LoginPage {
 
 	@Step("Login into application with userName : {0} and Password : {1}")
 	public AccountPage doLogin(String un, String paswd) {
+		System.out.println("UserName and Password is : " + un + ":" + paswd);
 		elementsUtil.doSendKeys(emailId, un);
 		elementsUtil.doSendKeys(password, paswd);
 		elementsUtil.doClick(logginButton);
