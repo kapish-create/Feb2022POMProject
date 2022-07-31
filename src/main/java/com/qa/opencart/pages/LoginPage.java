@@ -2,6 +2,7 @@ package com.qa.opencart.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.qa.opencart.utils.ElementsUtils;
 
@@ -12,6 +13,7 @@ import io.qameta.allure.Story;
 public class LoginPage {
 
 	private WebDriver driver;
+//	private RemoteWebDriver;
 	private ElementsUtils elementsUtil;
 	private By emailId = By.id("input-email");
 	private By password = By.id("input-password");
@@ -19,6 +21,8 @@ public class LoginPage {
 	private By forgotPassword = By.xpath("//div[@class='form-group']/a");
 	private By totalNumberOfLink = By.xpath("//div[@class='list-group']/a");
 	private By registerLink = By.linkText("Register");
+	
+	
 
 	public LoginPage(WebDriver driver) {
 
